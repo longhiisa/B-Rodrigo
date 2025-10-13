@@ -1,0 +1,312 @@
+/* ==========================
+   ESTILO GERAL
+========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+  
+body {
+    background-color: #fffaf2;
+    color: #4b2e14;
+    line-height: 1.6;
+}
+
+/* ==========================
+   CABEÇALHO / NAVBAR
+========================== */
+header {
+    background-color: #fcce62;
+    padding: 15px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 🔹 LOGO + TEXTO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #4b2e14;
+    letter-spacing: 0.5px;
+}
+
+/* 🔹 LINKS DE NAVEGAÇÃO */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #4b2e14;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #d08c37;
+}
+
+/* MENU MOBILE */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* ==========================
+   BANNER / HOME
+========================== */
+.banner {
+    background: linear-gradient(90deg, #ffe6b3, #e9d66d, #ffd139);
+    text-align: center;
+    padding: 120px 20px;
+    color: #4b2e14;
+}
+
+.banner h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.4);
+}
+
+.banner p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    font-size: 1.15rem;
+}
+
+.btn {
+    background-color: #4b2e14;
+    color: #fff6e0;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #d08c37;
+    color: #fff;
+}
+
+/* ==========================
+   SEÇÃO SOBRE
+========================== */
+.sobre {
+    padding: 80px 20px;
+    background-color: #fff6e0;
+    text-align: center;
+}
+
+.sobre h2 {
+    color: #d08c37;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+}
+
+.sobre p {
+    max-width: 900px;
+    margin: 0 auto 15px;
+    font-size: 1.05rem;
+    color: #4b2e14;
+}
+
+/* ==========================
+   PRODUTOS
+========================== */
+.produtos {
+    background: linear-gradient(90deg, #fff0d9, #ffe0b2);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.produtos h2 {
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    color: #d08c37;
+}
+
+.produtos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.produto-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.produto-card h3 {
+    color: #b86b27;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.produto-card p {
+    color: #4b2e14;
+    font-size: 0.95rem;
+}
+
+/* ==========================
+   CONTATO
+========================== */
+.contato {
+    padding: 80px 20px;
+    background-color: #fffaf2;
+    text-align: center;
+}
+
+.contato h2 {
+    margin-bottom: 25px;
+    color: #d08c37;
+    font-size: 2rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d8c8a8;
+    font-size: 1rem;
+    background-color: #fffdf8;
+    resize: none;
+}
+
+button {
+    background-color: #d08c37;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #b86b27;
+}
+
+/* ==========================
+   RODAPÉ
+========================== */
+footer {
+    background-color: #4b2e14;
+    color: #fff6e0;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* ==========================
+   RESPONSIVIDADE
+========================== */
+@media (max-width: 900px) {
+    .banner h2 {
+        font-size: 2.3rem;
+    }
+
+    .logo-text {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        background-color: #4b2e14;
+        width: 100%;
+        display: none;
+        padding: 15px 0;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        color: #fff6e0;
+        padding: 10px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: #4b2e14;
+    }
+
+    .produto-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        padding: 80px 15px;
+    }
+
+    .banner h2 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        padding: 10px 25px;
+        font-size: 0.95rem;
+    }
+}
